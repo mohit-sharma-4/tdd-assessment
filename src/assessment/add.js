@@ -18,4 +18,10 @@ export const add = (str) => {
       `negative numbers not allowed ${filterNegativeNumbers.join(',')}`
     );
   }
+
+  const result = filterNumbersOnly.reduce((acc, curr) => {
+    return acc + curr;
+  }, 0);
+
+  return result;
 };
